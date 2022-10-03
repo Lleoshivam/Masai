@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Navbar</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        justify-items: flex-end;
+
+    }
+
+    .navbar>div {
+
+        display: flex;
+    }
+
+    div>div {
+        margin: 0 20px;
+    }
+
+    div>div>div {
+        margin: 0 10px;
+    }
+
+
+    button {
+        background-color: white;
+        border: solid 2px red;
+        font-weight: bold;
+        color: crimson;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="first"><img src="masai_logo.svg" alt=""></div>
+        <div>
+            <div>Courses</div>
+            <div>Fees</div>
+            <div>About Us</div>
+            <div>Hire from US</div>
+            <div>FAQ</div>
+        </div>
+        <div><button>LogIn</button></div>
+    </div>
+</body>
+
+</html>
