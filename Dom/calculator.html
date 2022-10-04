@@ -9,15 +9,25 @@
 </head>
 
 <body>
-    <input type="text" name="" id="first" value="" placeholder="Enter First Number"><br><br>
-    <input type="text" name="" id="second" placeholder="Enter Second Number"><br><br>
-    <button click="onclick()" id="add">Add</button>
-    <button click="onclick()" id="subtract">subtract</button>
-    <button click="onclick()" id="multiply">multiply</button>
-    <button click="onclick()" id="divide">Divide</button>
+    <input type="number" id="first" placeholder="Enter First Number"><br><br>
+    <input type="number" id="second" placeholder="Enter Second Number"><br><br>
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">subtract</button>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="divide()">Divide</button>
 </body>
 
 </html>
 <script>
 
+
+
+    function add() {
+        // alert(first + second)
+        let first = document.getElementById("first").value
+
+        let second = document.getElementById("second").value
+        let sum = first + second
+        console.log(sum)
+    }
 </script>
