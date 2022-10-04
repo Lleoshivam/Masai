@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Check</title>
+</head>
+
+<body>
+    <input id="name" type="text" placeholder="Enter Age">
+    <button onclick="catchValue()">Submit</button>
+    <p id="p"></p>
+</body>
+
+</html>
+
+<script>
+    function catchValue() {
+        let name = document.getElementById("name").value
+
+        let p = document.getElementById("p")
+        if (name < 18) {
+            p.innerText = "You can't drive in India"
+        } else if (name > 18) {
+            p.innerText = "You can drive in India"
+        } else {
+            p.innerText = "You are old enough to drive in India"
+        }
+    }
+</script>
