@@ -1,0 +1,40 @@
+h1 {
+  color: #256D85;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body div {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+
+
+label,
+input,
+select {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 70px;
+}
+
+form {
+  padding: 20 px;
+
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
