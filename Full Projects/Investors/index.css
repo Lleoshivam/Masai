@@ -1,0 +1,47 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline dashed;
+}
+
+.parent>div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h4 {
+    margin: -15px auto 10px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 65px;
+    height: 29px;
+    border-radius: 7px;
+    padding-bottom: 10px;
+
+}
+
+@media only screen and (min-width:421px) and (max-width: 720px) {
+    .parent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width: 420px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
