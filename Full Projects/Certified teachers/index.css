@@ -1,0 +1,75 @@
+      /* Write your styles here */
+      #header {
+            text-align: center;
+      }
+
+      #header>p {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+      }
+
+      #teachers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 30px;
+      }
+
+      #teachers>div {
+            text-align: center;
+
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      #teachers>div>h6 {
+            margin: -10px 0;
+      }
+
+      #courses {
+            display: grid;
+            width: 80%;
+            margin: auto;
+
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+      }
+
+      img {
+            width: 100%;
+            padding-right: 10px;
+
+      }
+
+      #courses>div {
+            display: flex;
+            align-items: center;
+      }
+
+      #courses img {
+            width: 100px;
+            height: 100px;
+      }
+
+
+
+      /* keep media queries at that last */
+      /* medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 720px) {
+
+            #teachers,
+            #courses {
+                  grid-template-columns: repeat(2, 1fr);
+            }
+      }
+
+      /* small screens */
+      @media only screen and (min-width: 0px) and (max-width: 420px) {
+
+            #teachers,
+            #courses {
+                  grid-template-columns: repeat(1, 1fr);
+            }
+      }
